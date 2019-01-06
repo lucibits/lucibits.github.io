@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-align: center;
+  color: #eee;
+}
+
+.experience01-container{
+	width: 100%;
+	margin: auto;
+	transform:scale(1);
+	/*background-color: pink;*/
+}
+
+svg {
+	fill: #eee;
+}
+
+
+
+.settings_alpha{
+	width: 10%;
+	margin-bottom: -50px;
+	transform:rotate(10deg);
+	animation: rotate-settings 1s ease 0s infinite reverse running;
+}
+
+@keyframes rotate-settings{
+	0%{
+		transform:rotate(0deg);	
+	}
+	25%{
+		transform:rotate(45deg);	
+	}
+	50%{
+		transform:rotate(90deg);	
+	}
+	75%{
+		transform:rotate(135deg);	
+	}
+	100%{
+		transform:rotate(180deg);	
+	}
+}

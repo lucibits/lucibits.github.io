@@ -1,0 +1,140 @@
+html, body {
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.active {
+  /*color: #ee3176;*/
+  background-color: #ee3176;
+  border-radius: 50px;
+  color: white;
+  padding: 8px 10px;
+}
+
+.logo {
+  width: 40px;
+  /*background: pink;*/
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none; 
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none; 
+  color: #ee3176;
+}
+
+.facebook {
+  display: flex;
+}
+
+.facebook__search {
+  margin-right: auto;
+}
+
+.facebook {
+  height: 6em;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1em;
+}
+
+.facebook__brand  i{
+  font-size: 1.5em;
+}
+.facebook li:not(:last-child):not(:first-child):not(.facebook__search):not(.social) {
+  margin-right: 1em;
+  align-items: center;
+  justify-content: center;
+  /*margin-right: auto;*/
+}
+
+.social {
+  margin-right: 15px;
+}
+
+/*MAIN SECTION*/
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  min-height: 100%;
+  /*align-self: center;*/
+  /*width: auto;*/
+  /*margin: auto;*/
+  /*margin-right: 20px;*/
+  margin-bottom: 20px;
+  text-align: center;
+  /*padding: 10px;*/
+  /*border: 1px solid #333;*/
+}
+
+.photothumb{
+  width: 100%;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 650px) {
+  .boxContainer {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+/*  nav a {
+  padding: 1.5em;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: -100px;
+    width: 40px;
+  }*/
+}
+
+@media screen and (min-width: 850px) {
+  .facebook {
+    padding: 0 148px;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .boxContainer {
+    width: 50%;
+  }
+
+  .box {
+    /*padding: 10px;*/
+  }
+}
+

@@ -1,57 +1,64 @@
-body {
-	font-size: 100%;
-	overflow-y:hidden;
+html, body {
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  /*overflow-x: hidden;*/
 }
 
-.split {
-	height: 100%;
-	width: 50%;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	overflow-x: hidden;
-	padding-top: 40px;
+body {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .left {
-	left: 0;
-	/*background-color: #f7f7f7;*/
+	width: 100%;
+	/*background-color: pink;*/
+}
+
+.logo {
+  width: 200px;
+  /*background: pink;*/
 }
 
 .right {
-	right: 0;
-	background-color: white;
-}
-
-.content {
-	position: relative;
-	width: 40vw;
-	height: 50vw;
-	margin: auto;
-	/*top: 50%;*/
+	width: 100%;
+	/*text-align: center;*/
+	/*background-color: yellow;*/
 }
 
 nav {
 	width: 100%;
-	margin-top: 80px;
+	/*margin: auto;*/
+	/*margin-left: 0;*/
+	/*background-color: blue;*/
 }
 
 nav ul {
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
+	list-style-position: inside; 
+	padding-left: 0;
 }
 
 nav ul li {
 	list-style-type: none;
+	padding-left: 0;
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: bold;
-	font-size: 6em;
-	text-align: left;
-	line-height: 115px;
+	font-size: 4em;
+	text-align: center;
+	line-height: 80px;
+	/*background-color: blue;*/
 }
 
-nav ul li:hover {
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
 	/*background-color: yellow;*/
 	color: #ee3176;
 	font-style: italic;
@@ -62,22 +69,11 @@ h2 {
 	font-size: 2em;
 	font-weight: lighter;
 	color: #ee3176;
-}
-
-/*.fa-arrow-left {
-	width: 100px;
-	background-color: yellow;
-}
-*/
-
-.clip {
-  clip-path: circle(160px at center);
 }
 
 .social {
 	text-align: center;
 	margin-top: 40px;
-	margin-left: 180px;
 }
 
 .fa-github, 
@@ -86,144 +82,31 @@ h2 {
 	margin: 10px;
 }
 
-.fa-github:hover, 
-.fa-linkedin-in:hover, 
-.fa-codepen:hover {
-	margin: 10px;
-	color: #ee3176;
-}
 
-img {
-	margin-top: 60px;
-	width: 280px;
-	transition: all 1s ease;
-}
+@media screen and (min-width: 650px) {
 
-img:hover {
-	background: url(vector_lucibits_filled_gradient.svg) no-repeat;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	width: 280px;
-	animation: slide1 1s ease-in-out infinite;
-}
+	.logo {
+  		width: 280px;
+	}
+	.split {
+		width: 50%;
+	}
 
-@keyframes slide1 {
-  0%,
-  100% {
-    transform: translate(0, -20px) rotate(-45deg) scale(.9,.9);
-  }
+	.social {
+		margin-top: 150px;
+		margin-left: 180px;
+	}
 
-  50% {
-    transform: translate(0, 5px) rotate(-45deg) scale(.9,.9);
-  }
-}
+	ul {
+		margin-top: 140px;
+		margin-left: 50px;
+	}
 
-
-
-
-/*QUERIES*/
-@media screen and (max-width: 1100px) {
-
-body {
-	/*font-size: 100%;*/
-	/*overflow-y:hidden;*/
-}
-
-
-nav {
-	/*width: 100%;*/
-	/*margin-top: 80px;*/
-	/*background-color: pink;*/
-}
-
-nav ul {
-	/*overflow: hidden;*/
-	/*margin: 0;*/
-	/*padding: 0;*/
-}
-
-nav ul li {
-	list-style-type: none;
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
-	line-height: 70px;
-}
-
-nav ul li:hover {
-	/*background-color: yellow;*/
-	color: #ee3176;
-	font-style: italic;
-}
-
-h2 {
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 2em;
-	font-weight: lighter;
-	/*margin-top: -20px;*/
-	color: #ee3176;
-}
-
-/*.fa-arrow-left {
-	width: 100px;
-	background-color: yellow;
-}
-*/
-
-
-.social {
-	/*background-color: yellow;*/
-	text-align: center;
-	/*margin-top: 40px;*/
-	/*margin-left: 180px;*/
-	/*right: 0;*/
-	/*width: auto;*/
-}
-
-.fa-github, 
-.fa-linkedin-in, 
-.fa-codepen {
-	margin: 10px;
-}
-
-.fa-github:hover, 
-.fa-linkedin-in:hover, 
-.fa-codepen:hover {
-	margin: 10px;
-	color: #ee3176;
-}
-
-img {
-	/*width: 350px;*/
-	/*margin-top: 60px;*/
-	max-width: 200px;
-	/*background-color: yellow;*/
-	transition: all 1s ease;
-}
-
-img:hover {
-	/*width: 350px;*/
-	background: url(vector_lucibits_filled_gradient.svg) no-repeat;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	width: 280px;
-	/*transform: rotate(-45deg) scale(.9,.9);*/
-	/*transition: transform 1s;*/
-
-	animation: slide1 1s ease-in-out infinite;
-	/*background-color: yellow;*/
-}
-
-@keyframes slide1 {
-  0%,
-  100% {
-    transform: translate(0, -20px) rotate(-45deg) scale(.9,.9);
-  }
-
-  50% {
-    transform: translate(0, 5px) rotate(-45deg) scale(.9,.9);
-  }
-}
+	nav ul li {
+		font-size: 6em;
+		text-align: left;
+		line-height: 115px;
+		/*margin-top: 150px;*/
+	}
 
 }
