@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	/*border: 1px dashed blue;*/
+}
+
+body {
+	color: black;
+}
+
+/*OTHER STYLES*/
+.center {
+	text-align: left;
+}
+
+.active {
+	color: #ee3176;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #ee3176;
+	opacity: 0.8;
+	font-style: italic;
+}
+
+.box:hover {
+	box-shadow: 0px 0px 25px #eee;
+}
+
+
+/*SIDEBAR*/
+.sidebar {
+	display: block;
+	padding: 1em;
+	height: 6em;
+	background-color: white;
+}
+
+.sidebar a:hover:not(.active) {
+	color: #ee3176;
+	font-style: italic;
+}
+
+.sidebar a:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+
+.logo {
+	float: left;
+	width: 3em;
+	margin-top: 0.4em;
+	margin-left: 0.5em;
+}
+
+.link {
+	display: inline-block;
+	font-size: 1.5em;
+	margin-top: 0.8em;
+	margin-left: 1.5em;
+}
+
+
+.social {
+	display: none;
+}
+
+
+/*MAIN CONTENT*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 40px 20px;
+	padding: 4%;
+	background-color: #f6f6f6;
+}
+
+.box {
+	background-color: white;
+	line-height: 1.8em;	
+	padding-bottom: 20px;
+}
+
+img.photothumb {
+	width: 100%;
+}
+
+.box h1, .box p, .box span {
+	padding: 10px 30px;
+}
+
+.box p {
+	font-weight: normal;
+}
+
+.box h1 {
+	font-size: 150%;
+}
+
+.box span {
+	color: #005e97;
+	margin-bottom: 30px;
+}
+
+/*FOOTER*/
+footer {
+	position: fixed;
+	bottom: 0;
+	padding: 20px;
+	width: 100%;
+	text-align: left;
+	background-color: white;
+	color: #eee;
+}
+
+.social-footer {
+	float: right;
+	padding: 0px 5px;
+}
+
+
+/*================
+MEDIA QUERIES
+================*/
+@media screen and (min-width: 1000px) {
+	
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 20% 1fr;
+	}
+
+	.content {
+		grid-template-columns: 1fr 1fr;
+		grid-column-start: 2;
+		grid-gap: 40px 40px;
+	}
+
+	.sidebar {
+		width: 20%;
+		height: auto;
+		padding: 4em;
+		position: fixed;
+		line-height: 4em;
+		text-align: left;
+	}
+
+	.logo {
+		width: 6em;
+		margin-top: -0.8em;
+		margin-bottom: 6em;
+		margin-left: 2em;
+	}
+
+	.link-container, .social-container {
+		padding-left: 2.4em;
+		margin-bottom: 6em;
+	}
+
+	.link {
+		display: block;
+		font-size: 1.6em;
+		margin-top: 0;
+		margin-left: 0;
+		clear: both;
+	}
+
+	.social {
+		display: inline-block;
+		padding-right: 0.5em;
+	}
+
+	footer {
+		text-align: left;
+		background: none;
+		margin-left: 4.8em; 
+		color: #eee;
+	}
+
+	.social-footer {
+		display: none;
+	}
+	
+}
