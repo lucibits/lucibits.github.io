@@ -308,7 +308,7 @@ ul li span {
     .categories__container {
         display: inline-block;
         flex-direction: column;
-        overflow-y: hidden;
+        overflow-y: hidden !important;
         max-height: 100%;
         padding-left: 0;
     }
