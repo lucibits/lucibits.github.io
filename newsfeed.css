@@ -309,6 +309,8 @@ ul li span {
         display: inline-block;
         flex-direction: column;
         overflow-y: hidden !important;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         max-height: 100%;
         padding-left: 0;
     }
