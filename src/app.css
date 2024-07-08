@@ -1,0 +1,23 @@
+body {
+    background-color: #fbfbfb;
+}
+
+/* BODY GRADIENT */
+body {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(238, 252, 143, 0.5));
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: auto;
+  }
+
+.skillset {
+    transform: perspective(800px) rotateY(-2deg);
+    transition: all 1s ease 0s;
+    background: linear-gradient(70deg, rgba(216,216,216,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 100%);
+
+}
+
+.skillset:hover {
+    transform: perspective(800px) rotateY(0deg);
+}
+
