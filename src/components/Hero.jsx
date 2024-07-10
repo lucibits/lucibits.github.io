@@ -6,10 +6,10 @@ const Hero = ({ text }) => {
       <div className="px-4 sm:px-6 lg:px-8 2xl:px-56" >
         <div className="flex w-full rounded-3xl min-h-[300px] items-center ">
           <div className=' w-full'>
-            <h1 className="text-[#161414] font-mono font-bold text-[8rem] md:text-[10rem] leading-[10rem]">
+            <h1 className="text-[#161414] font-mono font-bold text-[8rem] leading-[8rem] md:text-[10rem] md:leading-[10rem]">
               HOLA, <br />I'M LUCY
             </h1>
-            <h1 className="text-[2rem] font-extralight mt-8">
+            <h1 className="text-[1.6rem] md:text-[2rem] font-extralight mt-8">
               Front-end Developer + UI/UX Product Designer based in London.
             </h1>
           </div>
