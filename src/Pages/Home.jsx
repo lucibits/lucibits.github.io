@@ -70,7 +70,7 @@ const Home = () => {
       <Hero />
 
       {/* Body section */}
-      <div className='mt-[56rem] md:mt-[40rem] pb-8 md:pb-16 bg-[#161414]/95 backdrop-blur-md rounded-t-3xl 2xl:px-24'>
+      <div className='mt-[42rem] md:mt-[40rem] pb-8 md:pb-16 bg-[#161414]/95 backdrop-blur-md rounded-t-3xl 2xl:px-24'>
         {/* Body content finish */}
         <div ref={scrollToWork} id="work" className='scroll-mt-24'>
           <Work />
