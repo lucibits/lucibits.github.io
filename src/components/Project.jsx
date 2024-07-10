@@ -84,7 +84,7 @@ const CurrentProject = () => {
                 <p>
                   These flows explored different journeys of the prescription process from the main platform and portal.
                   <br /><br />
-                  I created 3 main flow diagrams for the portal and main platform, taking into consideration the different user journeys of the 3 main users: clinitians, pharmacies and patients, and ensuring seamless integration with Meddbase software and patient databases.
+                  I created 3 main flow diagrams for the portal and main platform, taking into consideration the different user journeys of the 3 main users: Clinicians, pharmacies and patients, and ensuring seamless integration with Meddbase software and patient databases.
                   <br /><br /></p>
 
                 <div className='rounded-2xl object-contain bg-white my-8'>

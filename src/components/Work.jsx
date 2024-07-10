@@ -101,7 +101,7 @@ const AllWork = () => {
         />
         <IndividualProject
           projId='4'
-          title='Meddbase Clinitian Scheduler'
+          title='Meddbase Clinician Scheduler'
           description='CASE STUDY · PRODUCT DESIGN · FRONT-END DEVELOPMENT'
           imageSrc={imgProjMeddbaseScheduler}
         />

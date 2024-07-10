@@ -15,7 +15,7 @@ const Contact = () => {
           <p><span className='text-[#e9fb71] pr-4 text-2xl'>☻</span>  or you have a relevant question.</p>
         </div>
 
-        <div className='py-4 md:py-0 md:px-4 col-span-12 lg:col-span-6 justify-stretch'>
+        <div className='py-8 my-4 md:my-0 md:py-0 md:px-4 col-span-12 lg:col-span-6 justify-stretch'>
           <div className='py-4 border-b-[1px] border-white border-dashed hover:translate-x-8 transition-all'>
             <a href='mailto:lucivfr@gmail.com' className='flex justify-between hover:text-[#e9fb71] text-[2rem] font-mono '>
               <span>⇢</span> EMAIL
